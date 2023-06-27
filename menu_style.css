@@ -1,0 +1,155 @@
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 11px;
+}
+.menu-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  position: relative;
+  padding: 0 0 0 4px;
+  margin: 0;
+  background-color: lightblue;
+}
+.menu-row a,
+.menu-row a:link,
+.menu-row a:visited,
+.menu-row a:focus,
+span {
+  text-decoration: none;
+}
+.menu-row a:hover {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.menu-row ul li:hover:after {
+  color: lightblue;
+}
+.menu-row .col-hd {
+  width: 19%;
+  float: left;
+  color: white;
+  margin: 0 0 0 10px;
+}
+.menu-row .col-hd ul {
+  padding: 0;
+  margin: 0;
+}
+.menu-row .col-hd ul li {
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+}
+.menu-row .col-hd h4 {
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 0;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  color: lightblue;
+  background: white;
+}
+.menu-row .col-hd ul li a {
+  display: block;
+  padding: 0 0 15px 0;
+  color: lightblue;
+  font-size: 13px;
+}
+.menu-row .col-hd ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.menu-row > li > ul li ul,
+.menu-row li > ul li,
+.menu-row > li > .megadrop-hd,
+.menu-row > li > ul,
+.menu-row > li {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-outs;
+}
+
+.dropdown-hdMenu {
+  display: inline-block;
+  text-align: center;
+  border-left: 1px solid darkgrey;
+}
+.dropdown-hdMenu a {
+  padding: 20px;
+  display: block;
+}
+.dropdown-hdMenu:hover > a {
+  color: lightblue;
+}
+
+.dropdown-hdMenu:hover {
+  background-color: white;
+}
+.dropdown-hdMenu:hover .megadrop-hd {
+  opacity: 0.8;
+  visibility: visible;
+  margin-top: 0;
+  background-color: grey;
+}
+/* Megadrop width dropdown */
+.megadrop-hd {
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  list-style: none;
+  left: 0px;
+  min-height: 100px;
+  text-align: left;
+  padding: 10px 0;
+  z-index: 10000001;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  border: 1px solid lightblue;
+  border-right: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+}
+.menu-row .col-hd {
+  width: 19%;
+  float: left;
+  color: white;
+  margin: 0 0 0 10px;
+}
+.menu-row .col-hd ul {
+  padding: 0;
+  margin: 0;
+}
+.menu-row .col-hd ul li {
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+}
+.menu-row .col-hd h3 {
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 0;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  color: lightblue;
+  background: white;
+}
+.menu-row .col-hd ul li a {
+  display: block;
+  padding: 0 0 15px 0;
+  color: lightblue;
+  font-size: 13px;
+}
+.menu-row .col-hd ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
