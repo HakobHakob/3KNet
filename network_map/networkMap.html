@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./networkMap.css" />
+    <!-- FontAwesome  link-->
+    <script
+      src="https://kit.fontawesome.com/e8a3ccd4f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tariffs search</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="main_invested_container">
+        <div class="article_box">
+          <p class="main_article">Главная</p>
+          <img id="article_arrow" src="./img/icon_Arrow_light.svg" alt="Img" />
+          <p class="main_article">Контакты</p>
+          <img id="article_arrow" src="./img/icon_Arrow.svg" alt="Img" />
+          <p class="article_name">Карта сети</p>
+        </div>
+        <!-- Contacts map -->
+        <div class="contacts_map_container">
+          <div class="map_content">
+            <h1 class="map_title">карта сети <span>3KNET</span></h1>
+            <div class="map_body">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410101.7904504306!2d44.61350793240265!3d40.71585789433207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041acd13eb6c271%3A0xc2c4cd041074fe13!2sDilijan!5e0!3m2!1sen!2sam!4v1688025180376!5m2!1sen!2sam"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="map_info">
+              <div class="map_info_item">
+                <h3 class="map_info_title">Екатеринбург</h3>
+
+                <p class="map_info_text">Екатеринбург, ул. Кичигина, д.9/4</p>
+                <p class="map_info_text">Екатеринбург, микрорайон Светлый, 9</p>
+              </div>
+              <div class="map_info_item">
+                <h3 class="map_info_title">Москва</h3>
+                <p class="map_info_text">
+                  Москва, ул. Радиальная 6-я, д.7/6, к. 3
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- News cards -->
+          <div class="news_container_content">
+            <div class="news_container_title">
+              НАШИ <span>&nbsp;</span> <span id="news_span">НОВОСТИ</span>
+              <span>&nbsp;</span> И СОБЫТИЯ
+            </div>
+            <div class="news_cards">
+              <div class="news_card">
+                <div class="news_card_content">
+                  <div class="news_card_img emergency_img">
+                    <div class="news_card_img_date">
+                      <p>23.04.2023</p>
+                    </div>
+                  </div>
+                  <div class="news_card_text_box">
+                    <p class="news_card_text_title">
+                      Аварийные работы завершены
+                    </p>
+                    <p class="news_card_text"></p>
+                  </div>
+                </div>
+                <div class="news_card_btn_box">
+                  <button type="submit" class="btn_detailed">Подробнее</button>
+                  <img src="./img/Arrow_right.svg" alt="Arrow" />
+                </div>
+              </div>
+
+              <div class="news_card">
+                <div class="news_card_content">
+                  <div class="news_card_img upgrade_img">
+                    <div class="news_card_img_date">
+                      <p>20.04.2023</p>
+                    </div>
+                  </div>
+                  <div class="news_card_text_box">
+                    <p class="news_card_text_title">Плановые тех.работы</p>
+                    <p class="news_card_text">
+                      Плановые технические работы 21.04.2023 и 23.04.2023
+                    </p>
+                  </div>
+                </div>
+
+                <div class="news_card_btn_box">
+                  <button type="submit" class="btn_detailed">Подробнее</button>
+                  <img src="./img/Arrow_right.svg" alt="Arrow" />
+                </div>
+              </div>
+              <div class="news_card">
+                <div class="news_card_content">
+                  <div class="news_card_img technical_img">
+                    <div class="news_card_img_date">
+                      <p>20.04.2023</p>
+                    </div>
+                  </div>
+                  <div class="news_card_text_box">
+                    <p class="news_card_text_title">
+                      Модернизация сети Екатеринбург
+                    </p>
+                    <p class="news_card_text">
+                      В связи с активным ростом абонент...
+                    </p>
+                  </div>
+                </div>
+
+                <div class="news_card_btn_box">
+                  <button type="submit" class="btn_detailed">Подробнее</button>
+                  <img src="./img/Arrow_right.svg" alt="Arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action_cards_pagination">
+            <img src="./img/icon_arrow_left.svg" alt="Arrow" />
+            <div class="active_cards_pagination">
+              <img src="./img/Ellipse_passive.svg" alt="Arrow" />
+              <img src="./img/Ellipse_active.svg" alt="Arrow" />
+              <img src="./img/Ellipse_passive.svg" alt="Arrow" />
+            </div>
+            <img src="./img/Arrow_right.svg" alt="Arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
