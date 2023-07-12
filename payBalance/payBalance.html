@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Pay main</title>
+  </head>
+  <body>
+    <!-- Main container -->
+
+    <div class="main_container">
+      <div class="main_invested_container">
+        <!-- Page article -->
+        <div class="article_box">
+          <a href="#" class="article_sub_name">Главная</a>
+          <img id="article_arrow" src="./img/icon_Arrow_grey.svg" alt="Img" />
+          <a href="#" class="article_sub_name">Оплата</a>
+          <img src="./img/icon_Arrow _green.svg" alt="Img" />
+          <a href="#" class="article_name">Пополнить баланс</a>
+        </div>
+
+        <!-- Top up balance container -->
+        <div class="topup_balance_container">
+          <h1 class="topup_balance_title">Пополнить баланс</h1>
+
+          <div class="topup_cards_container">
+            <div class="balance_card">
+              <h2 class="balance_card_title">Пополнение счета</h2>
+
+              <div class="balance_card_content">
+                <form action="#">
+                  <div class="balanse_card_switch">
+                    <div class="switch_tab_account">Лицевой счет</div>
+                    <div class="switch_tab_phone">Телефон</div>
+                  </div>
+                </form>
+
+                <div class="balance_card_inputs">
+                  <div class="input_row">
+                    <div class="flexible-input">
+                      <input
+                        class="card_num_inp"
+                        type="text"
+                        placeholder="Номер счета"
+                      />
+                      <!-- for Telephone -->
+                      <!-- <input
+                        class="card_num_inp"
+                        type="text"
+                        placeholder="+7 (* * *) * * * - * * - * *"
+                      /> -->
+                    </div>
+
+                    <!-- Here js code when input validation is true or false -->
+
+                    <!-- 
+                        const input = document.querySelector('.card_num_inp');
+
+                              input.addEventListener('input', () => {
+                                    if (input.checkValidity()) {
+                                      input.placeholder = '<img src="./img/validation_icon/icon_Right.svg" alt="Checkmark"> '
+                                      input.border = '1px solid   #19d894'
+                                    } else {
+                                      input.placeholder = '<img src="./img/validation_icon/icon_Warning.svg" alt="Crossmark"> '
+                                       input.border = '1px solid   #f79009'
+                                    }
+                                    });
+                     -->
+                    <div class="flexible-input">
+                      <input
+                        class="card_num_inp"
+                        type="text"
+                        placeholder="Сумма"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="select_info_row">
+                    <div class="select_div">
+                      <select>
+                        <option value="card">Способ оплаты</option>
+                        <option value="card">Картой</option>
+                        <option value="qiwi">Qiwi wallet</option>
+                        <option value="umoney">ЮMoney</option>
+                      </select>
+                    </div>
+                    <div class="select_info_info">
+                      другие <a href="#"> способы оплаты</a>
+                    </div>
+                    <!--
+                    for input with placehplder "CVC / CVV"
+                     <div class="flexible-input">
+                      <input
+                        class="card_num_inp"
+                        type="text"
+                        placeholder="CVC / CVV"
+                      />
+                    </div>
+                -->
+                  </div>
+                </div>
+                <div class="balance_card_btn_box">
+                  <div class="btn_box">
+                    <button type="submit" class="balance_card_btn">
+                      Оплатить
+                    </button>
+                  </div>
+
+                  <p class="balance_card_btn_text">
+                    Нажмите кнопку «Оплатить», выберите банк, перейдите в его
+                    приложение и завершите оплату. Мы пришлём SMS или push о
+                    зачислении средств.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="promiced_payment_card">
+              <div class="promiced_card_header">
+                <h1 class="promiced_card_title">Обещанный платёж</h1>
+                <p class="promiced_card_header_text">
+                  Пополняйте баланс сейчас, а платите потом. Доступно в
+                  роуминге.
+                </p>
+              </div>
+              <form action="#" class="promiced_card_input_form">
+                <input
+                  type="text"
+                  id="paysum"
+                  name="paysum"
+                  placeholder="Пополняемый номер"
+                />
+                <label for="paysum">Введите номер, чтобы выбрать сумму</label>
+              </form>
+
+              <button type="submit" class="promiced_card_btn">
+                Выбрать сумму
+              </button>
+              <p class="promiced_card_text">
+                Нажимая кнопку «Выбрать сумму», вы принимаете условия
+                <a href="#">пользовательского соглашения.</a> Каждая активация
+                оплачивается в зависимости от суммы и периода.
+                <a href="#"> Подробнее обуслуге</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="topup_services">
+            <button type="submit" class="service_card_small">
+              <p class="service_switch_text">Подключить автоплатеж</p>
+              <img src="./img/cards_icon.svg" alt="Icon" />
+            </button>
+            <button type="submit" class="service_card_small">
+              <p class="service_switch_text">Оплатить услуги</p>
+              <img src="./img/cards_icon.svg" alt="Icon" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile App Main Container -->
+        <div class="mobile_app_main_container">
+          <img
+            class="mobile_app_bg_img"
+            src="./img/mobileApp/img_Bg_mobile_app.png"
+            alt="Image"
+          />
+          <div class="mobile_app_main_body">
+            <div class="mobile_app_main_content">
+              <h1 class="mobile_app_main_title">Быстро и удобно</h1>
+
+              <p class="mobile_app_main_text">
+                Управляйте тарифами и услугами, следите за расходами, пополяйте
+                счет удобным способом в приложении 3KNET.
+              </p>
+              <div class="mobile_app_btns">
+                <button type="submit" class="btn_download_green">
+                  СКАЧАТЬ
+                  <img src="./img/mobileApp/icon_Appstore.svg" alt="Appstore" />
+                </button>
+
+                <button type="submit" class="btn_download_dark">
+                  СКАЧАТЬ
+                  <img
+                    src="./img/mobileApp/icon_Playmarket.svg"
+                    alt="PlayMarket"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="mobile_app_phone_fake"></div>
+          </div>
+          <div class="bg_img_phone">
+            <div class="bg_img_phone_fake"></div>
+            <div class="bg_img_phone_fill">
+              <img
+                class="bbb"
+                src="./img/mobileApp/img_phones.png"
+                alt="Image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Main form -->
+        <div class="main_form">
+          <div class="invested_main_form">
+            <div class="main_form_body">
+              <div class="main_form_content">
+                <h1 class="main_form_title">Будь в курсе всех предложений</h1>
+                <p class="main_form_text">
+                  Подпишись на нашу рассылку, чтобы не упустить выгодные
+                  индивидуальные предложения!
+                </p>
+                <button type="submit" class="btn_subscribe">Подписаться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
