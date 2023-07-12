@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+:root {
+  --accent-light-color: #19d894;
+  --accent-dark-color: #31c880;
+  --text-color: #111;
+  --text-elements-color: #fff;
+  --add-color: #f4f4f5;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+}
+button {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  background: #19d894;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main_container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main_invested_container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Article */
+.article_box {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.main_article,
+.article_name {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 21px;
+}
+.article_name {
+  color: var(--accent-light-color);
+}
+
+/* Connect tariff section*/
+
+.connect_tariff_content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 0;
+}
+.tariff_sections_header {
+  color: var(--text-color);
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 990px) {
+  .tariff_sections_header {
+    font-size: 36px;
+  }
+}
+@media (max-width: 766px) {
+  .tariff_sections_header {
+    font-size: 24px;
+  }
+}
+.tariff_sections_header span {
+  color: var(--accent-light-color);
+}
+
+.connect_tariff_body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1120px) {
+  .connect_tariff_body {
+    justify-content: center;
+  }
+}
+@media (max-width: 766px) {
+  .connect_tariff_body {
+    justify-content: flex-start;
+    font-size: 24px;
+  }
+}
+
+.connect_tariff_card {
+  flex-basis: 350px;
+  width: 100%;
+  max-width: 365px;
+  min-height: 130px;
+  border-radius: 20px;
+  background: var(--add-color, #f4f4f5);
+}
+
+.connect_tariff_card {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.connect_tariff_arrow {
+  display: flex;
+  justify-content: end;
+}
+
+.connect_tariff_info_title {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.connect_tariff_info_text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Search tariffs section */
+
+.search_tariffs {
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/*Search tariffs  header */
+.tariffs_header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 990px) {
+  .tariffs_header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    max-height: fit-content;
+  }
+}
+@media (max-width: 766px) {
+  .tariffs_header {
+    max-height: fit-content;
+  }
+}
+
+.tariff_switchers {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  .tariff_switchers {
+    justify-content: space-between;
+  }
+}
+
+.tariff_switchers > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: Akzidenz-Grotesk Pro;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.tariff_switchers > a:hover {
+  color: var(--accent-light-color);
+}
+.tariff_switchers > a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-light-color);
+}
+
+.tariffs_title {
+  color: var(--text-color);
+  font-size: 48px;
+  font-family: Akzidenz-Grotesk Pro;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tariffs_title span {
+  color: var(--accent-light-color);
+}
+
+@media screen and (max-width: 990px) {
+  .tariffs_title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 766px) {
+  .tariffs_title {
+    font-size: 24px;
+  }
+}
+
+/* Tariff tabs */
+.tariffs_tabs {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.tariffs_tabs p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 4px;
+  flex-grow: 1;
+  flex-basis: 200px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+.tariffs_tabs p:hover {
+  background: var(--accent-light-color);
+}
+
+/* Tariffs cards */
+
+.tariffs_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 1130px) {
+  .tariffs_cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 766px) {
+  .tariffs_cards {
+    flex-direction: column;
+  }
+}
+.tariff_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 365px;
+  flex-basis: 350px;
+  min-height: 210px;
+  border-radius: 14px;
+  background-color: var(--add-color);
+  position: relative;
+}
+
+.bg_picture {
+  color: #fff;
+}
+.tariff_card > * {
+  position: absolute;
+}
+.tariff_card > img {
+  width: 100%;
+  max-width: 365px;
+  min-height: 210px;
+}
+
+.tariff_card_body {
+  width: 100%;
+  min-height: 210px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.tariff_card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tariff_card_name {
+  display: flex;
+  max-width: 145px;
+  min-height: 20px;
+  width: 100%;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: #fff;
+}
+.tariff_card_top img {
+  cursor: pointer;
+}
+
+.tarrif_card_pic_bg {
+  background: transparent;
+}
+.tariff_card_name {
+  border: 1px solid;
+}
+
+/* Tarrif card bottom */
+.tariff_card_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tariff_card_speed {
+  max-width: 160px;
+  color: inherit;
+  font-size: 16px;
+  font-family: Akzidenz-Grotesk Pro;
+  line-height: 24px;
+  opacity: 0.5;
+}
+.speed_info {
+  display: flex;
+  justify-content: end;
+  font-size: 64px;
+  font-family: Akzidenz-Grotesk Pro;
+  text-transform: uppercase;
+}
+.two_hundred_speed {
+  color: #fff;
+  font-size: 64px;
+  font-family: Akzidenz-Grotesk Pro;
+  text-transform: uppercase;
+}
+
+.tariff_card_bottom > * {
+  flex-grow: 1;
+}
+
+/* Special equipment section */
+
+.special_equipment_section {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.special_equipments_body {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 1130px) {
+  .special_equipments_body {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 766px) {
+  .special_equipments_body {
+    flex-direction: column;
+  }
+}
+
+.special_equipments_card {
+  width: 100%;
+  max-width: 365px;
+  min-height: 370px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.bg_ZTE,
+.bg_GPON,
+.bg_ZXV {
+  width: 100%;
+  max-width: 365px;
+  min-height: 250px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg_ZTE img,
+.bg_GPON img,
+.bg_ZXV img {
+  width: 100%;
+  max-width: 225px;
+  min-height: 215px;
+  object-fit: contain;
+}
+
+.special_equipments_card_bg {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+.special_equipments_card_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.special_equipments_card_info > * {
+  flex-grow: 1;
+}
+.special_equipments_card_sort {
+  max-width: 200px;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 21px;
+}
+.card_price_box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.special_equipments_price {
+  color: var(--accent-light-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.special_equipments_card_btn_box {
+  display: flex;
+  gap: 10px;
+}
+.btn_detailed {
+  display: flex;
+  color: var(--accent-light-color);
+  background: transparent;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn_detailed:hover {
+  color: var(--accent-dark-color);
+}
