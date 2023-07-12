@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+:root {
+  --accent-light-color: #19d894;
+  --accent-dark-color: #31c880;
+  --text-color: #111;
+  --text-elements-color: #fff;
+  --add-color: #f4f4f5;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #252527;
+}
+
+/* Main container */
+.main_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+/* Pay autopay pop up 1 */
+.popoup_one_container {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+}
+.autopay_popup_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  max-width: 740px;
+  min-height: 530px;
+  border-radius: 100px 0px 100px 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--text-elements-color);
+  padding: 50px;
+}
+@media (max-width: 776px) {
+  .autopay_popup_one {
+    max-width: 330px;
+    min-height: 430px;
+    border-radius: 50px 0px 50px 50px;
+  }
+}
+
+
+
+.icon_close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 776px) {
+  .icon_close img {
+    width: 23px;
+    height: 21px;
+    flex-shrink: 0;
+  }
+}
+.autopay_popup_one_text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.autopay_popup_one_title {
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+@media (max-width: 991px) {
+  .autopay_popup_one_title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 776px) {
+  .autopay_popup_one_title {
+    font-size: 16px;
+  }
+}
+
+.autopay_popup_one_text {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+@media (max-width: 776px) {
+  .autopay_popup_one_text {
+    max-width: 160px;
+    font-size: 14px;
+  }
+}
+
+form {
+  margin: auto;
+  width: 100%;
+  max-width: 475px;
+  min-height: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 30;
+}
+@media (max-width: 776px) {
+  form {
+    justify-content: space-evenly;
+  }
+}
+.form_input {
+  width: 100%;
+  max-width: 470px;
+  min-height: 90px;
+  border-radius: 3px;
+  border: 1px solid rgba(66, 66, 66, 0.5);
+  background: var(--text-elements-color);
+}
+
+@media (max-width: 776px) {
+  .form_input {
+    max-width: 300px;
+    max-height: 50px;
+    min-height: 50px;
+  }
+}
+.email_form {
+    display: block;
+}
+.phone_form {
+    display: none;
+}

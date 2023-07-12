@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/e8a3ccd4f0.js"
       crossorigin="anonymous"
     ></script>
-    <title>Tariffs search</title>
+    <title>Tariff</title>
   </head>
   <body>
     <div class="main_container">
@@ -81,10 +81,7 @@
               <div class="tariff_card">
                 <div class="tariff_card_top">
                   <div class="tariff_card_name">100 за 100</div>
-                  <img
-                    src="./img/connect_tariff_dark_arrow.svg"
-                    alt="Arrow-left"
-                  />
+                  <img src="./img/arrow_light_area.svg" alt="Arrow-left" />
                 </div>
 
                 <div class="tariff_card_bottom">
@@ -117,10 +114,7 @@
               <div class="tariff_card">
                 <div class="tariff_card_top">
                   <div class="tariff_card_name">300 за 300</div>
-                  <img
-                    src="./img/connect_tariff_dark_arrow.svg"
-                    alt="Arrow-left"
-                  />
+                  <img src="./img/arrow_light_area.svg" alt="Arrow-left" />
                 </div>
 
                 <div class="tariff_card_bottom">
@@ -379,54 +373,93 @@
       </div>
       <!-- Personal area container -->
       <div class="personal_area_main">
-        <div class="bg_personal_area">
-          <img src="./img/personalArea/img_bg_lk.png" alt="Bg_img" />
-        </div>
+        <img
+          class="pa_main_bg_img"
+          src="./img/personalArea/img_bg_lk.png"
+          alt="Image"
+        />
 
-        <div class="personal_area_container">
+        <div class="invested_pa_main">
           <div class="personal_area_body">
-            <div class="personal_area_title">Личный кабинет</div>
-            <div class="personal_area_content">
-              <div class="pa_card pa_info_light_blue">
-                <div class="pa_card_content pa_card_fr">
-                  <p class="pa_card_text_dark pa_text_fr">
-                    Управляйте счетами и услугами
-                  </p>
-                  <img src="./img/arrow_dark.svg" alt="Arrow" />
+            <div class="pa_content">
+              <h1 class="pa_content_title">Личный кабинет</h1>
+              <div class="pa_text_cards">
+                <div class="pa_cards_row">
+                  <div class="pa_card_small pa_card_without_bg">
+                    <div class="pa_card_small_content">
+                      <p class="pa_card_text">Управляйте счетами и услугами</p>
+                      <img
+                        class="pa_card_arrow"
+                        src="./img/arrow_dark.svg"
+                        alt="Arrow-icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="pa_card_small">
+                    <img
+                      src="./img/personalArea/img_Geometry.png"
+                      alt="Image"
+                    />
+                    <div class="pa_card_small_content">
+                      <p class="pa_card_text">Меняйте свой тариф в один клик</p>
+                      <img
+                        class="pa_card_arrow"
+                        src="./img/arrow_light_area.svg"
+                        alt="Arrow-icon"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="pa_card pa_info_dark">
-                <div class="pa_card_content pa_card_sec">
-                  <p class="pa_card_text_light pa_text_sec">
-                    Меняйте свой тариф в один клик
-                  </p>
-                  <img src="./img/arrow_light_area.svg" alt="Arrow" />
-                </div>
-              </div>
-              <div class="pa_card pa_info_blue">
-                <div class="pa_card_content pa_card_third">
-                  <p class="pa_card_text_light pa_text_third">
-                    Контролируйте расходы на вашем смартфоне
-                  </p>
-                  <img src="./img/arrow_light_area.svg" alt="Arrow" />
-                </div>
-              </div>
-              <div class="pa_card pa_info_dark">
-                <div class="pa_card_content pa_card_fourth">
-                  <p class="pa_card_text_dark pa_text_fourth">
-                    Получайте специальные предложения от 3KNET
-                  </p>
-                  <img src="./img/arrow_dark.svg" alt="Arrow" />
+                <div class="pa_cards_row">
+                  <div class="pa_card_small">
+                    <img src="./img/personalArea/img_Space.png" alt="Image" />
+                    <div class="pa_card_small_content">
+                      <p class="pa_card_text">
+                        Контролируйте расходы на вашем смартфоне
+                      </p>
+                      <img
+                        class="pa_card_arrow"
+                        src="./img/arrow_light_area.svg"
+                        alt="Arrow-icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="pa_card_small pa_card_without_bg">
+                    <div class="pa_card_small_content">
+                      <p class="pa_card_text">
+                        Получайте специальные предложения от 3KNET
+                      </p>
+                      <img
+                        class="pa_card_arrow"
+                        src="./img/arrow_dark.svg"
+                        alt="Arrow-icon"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="pa_robot_hand_fake"></div>
           </div>
         </div>
-
-        <div class="personal_area_bg_hand">
-          <img src="./img/personalArea/img_hand_with_phone.png" alt="Img" />
+        <div class="robot_hand_box">
+          <div class="robot_hand_before_fake">
+            <!-- <img
+            class="robot_hand"
+            src="./img/personalArea/img_hand_with_phone.png"
+            alt="Img"
+          /> -->
+          </div>
+          <div class="robot_hand_box">
+            <img
+              class="robot_hand"
+              src="./img/personalArea/img_hand_with_phone.png"
+              alt="Img"
+            />
+          </div>
         </div>
       </div>
+
       <!--Our  news cards -->
       <div class="main_invested_container">
         <div class="news_container_content">
@@ -451,10 +484,7 @@
               </div>
               <div class="news_card_btn_box">
                 <button type="submit" class="btn_detailed">Подробнее</button>
-                <img
-                  src="./img/detailed_arrow.svg"
-                  alt="Arrow"
-                />
+                <img src="./img/detailed_arrow.svg" alt="Arrow" />
               </div>
             </div>
 
@@ -475,10 +505,7 @@
 
               <div class="news_card_btn_box">
                 <button type="submit" class="btn_detailed">Подробнее</button>
-                <img
-                src="./img/detailed_arrow.svg"
-                  alt="Arrow"
-                />
+                <img src="./img/detailed_arrow.svg" alt="Arrow" />
               </div>
             </div>
             <div class="news_card">
@@ -500,10 +527,7 @@
 
               <div class="news_card_btn_box">
                 <button type="submit" class="btn_detailed">Подробнее</button>
-                <img
-                src="./img/detailed_arrow.svg"
-                  alt="Arrow"
-                />
+                <img src="./img/detailed_arrow.svg" alt="Arrow" />
               </div>
             </div>
           </div>
