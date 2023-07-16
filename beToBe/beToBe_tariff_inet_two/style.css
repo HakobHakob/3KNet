@@ -285,7 +285,6 @@ button {
 /* About tariff plan */
 .about_tariff_plan_content {
   display: flex;
-  justify-content: space-between;
   gap: 50px;
   margin: 50px 0 80px;
 }
@@ -300,7 +299,7 @@ button {
 }
 
 .about_tariff_plan_text {
-  max-width: 500px;
+  max-width: 480px;
   color: var(--text-color);
   font-size: 16px;
   font-weight: 400;
